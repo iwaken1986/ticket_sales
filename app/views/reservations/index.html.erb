@@ -15,7 +15,7 @@
   <tbody>
     <% @reservations.each do |reservation| %>
       <tr>
-        <td><%= reservation.event %></td>
+        <td><%= reservation.event.name %></td>
         <td><%= reservation.name %></td>
         <td><%= reservation.tel %></td>
         <td><%= link_to 'Show', reservation %></td>

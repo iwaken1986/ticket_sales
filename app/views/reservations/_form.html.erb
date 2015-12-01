@@ -13,7 +13,8 @@
 
   <div class="field">
     <%= f.label :event_id %><br>
-    <%= f.text_field :event_id %>
+    <%#= f.text_field :event_id %>
+    <%= f.collection_select(:event_id, Event.all, :id, :name) %>
   </div>
   <div class="field">
     <%= f.label :name %><br>

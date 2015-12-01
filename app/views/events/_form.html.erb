@@ -21,7 +21,8 @@
   </div>
   <div class="field">
     <%= f.label :category %><br>
-    <%= f.text_field :category %>
+    <%#= f.text_field :category %>
+    <%= f.select( :category , options_for_select(%w{ 音楽 スポーツ 映画 演劇 クラシックイベント・アート アニメ 韓流}, '音楽')) %>
   </div>
   <div class="field">
     <%= f.label :ticket_count %><br>
