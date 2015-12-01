@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    models:
+      event: "イベント"  #g
+      reservation: "予約"  #g
+
+    attributes:
+      event:
+        category: "カテゴリ"  #g
+        date: "開催日時"
+        name: "イベント名"
+
+      reservation:
+        event: :activerecord.models.event  #g
+        name: "お名前"
+        tel: "電話番号"  #g

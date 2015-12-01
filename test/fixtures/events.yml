@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2015-12-01 05:03:58
+  name: MyString
+  category: MyString
+  ticket_count: 1
+
+two:
+  date: 2015-12-01 05:03:58
+  name: MyString
+  category: MyString
+  ticket_count: 1
