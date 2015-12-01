@@ -22,3 +22,38 @@
 
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
+<h1>予約状況</h1>
+
+<p>
+  <%= Reservation.count %>件の予約(全体)
+</p>
+<p>
+  <%= @event.reservations.count %>件の予約(このイベント)
+</p>
+
+<p><%= link_to('予約する', new_reservation_path(event_id: @event.id)) %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th>Name</th>
+      <th>Tel</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event.reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.event.name %></td>
+        <td><%= reservation.name %></td>
+        <td><%= reservation.tel %></td>
+        <td><%= link_to 'Show', reservation %></td>
+        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
