@@ -45,3 +45,13 @@ group :development do
   gem 'spring'
 end
 
+gem 'annotate'
+
+gem 'simplecov'
+
+gem 'i18n_generators'
+
+gem 'thin'
+
+gem 'material_design_lite-rails'
+
