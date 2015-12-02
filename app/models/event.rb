@@ -13,4 +13,12 @@
 
 class Event < ActiveRecord::Base
     has_many :reservations
+
+  #date,name,category,ticket_countは必須項目
+
+  #categoryは存在するもののみ
+
+  #ticket_countは数字のみ
+
+  #nameは50文字以内
 end
