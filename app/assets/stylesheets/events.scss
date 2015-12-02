@@ -1,3 +1,11 @@
 // Place all the styles related to the Events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.demo-card-square.mdl-card {
+  /*width: 320px;*/
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+}
