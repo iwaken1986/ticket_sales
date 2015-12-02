@@ -10,6 +10,7 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @left = @event.ticket_count - @event.reservations.count
   end
 
   # GET /events/new
