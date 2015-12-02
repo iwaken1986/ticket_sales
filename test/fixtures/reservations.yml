@@ -13,11 +13,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  event_id: 
-  name: MyString
-  tel: MyString
+  event_id: 1
+  name: 山田 太郎
+  tel: 090-1111-2222
 
 two:
-  event_id: 
-  name: MyString
-  tel: MyString
+  event_id: 1
+  name: 佐藤 次郎
+  tel: 03-4444-5555
