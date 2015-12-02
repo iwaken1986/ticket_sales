@@ -14,8 +14,9 @@ class ReservationsController < ApplicationController
 
   # GET /reservations/new
   def new
-    @reservation = Reservation.new
+    @reservation = Reservation.new(event_id: params["event_id"].to_i)
   end
+
 
   # GET /reservations/1/edit
   def edit
@@ -28,7 +29,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to @reservation, notice: 'Reservation was successfully created.' }
+        format.html { redirect_to root_url, notice: 'ご予約ありがとうございます。' }
         format.json { render :show, status: :created, location: @reservation }
       else
         format.html { render :new }
