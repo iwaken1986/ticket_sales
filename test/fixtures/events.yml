@@ -15,12 +15,12 @@
 
 one:
   date: 2015-12-01 05:03:58
-  name: MyString
-  category: MyString
-  ticket_count: 1
+  name: ワールドカップアジア予選
+  category: スポーツ
+  ticket_count: 1000
 
 two:
   date: 2015-12-01 05:03:58
-  name: MyString
-  category: MyString
-  ticket_count: 1
+  name: 小澤征爾クリスマスコンサート
+  category: クラシックイベント・アート
+  ticket_count: 300
