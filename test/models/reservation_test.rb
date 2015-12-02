@@ -16,6 +16,8 @@ class ReservationTest < ActiveSupport::TestCase
 
   def setup
     @reservation = reservations(:one)
+    @event = events(:one)
+    @reservation.event_id = @event.id
   end
 
   #event_id,name,telは必須項目
@@ -23,7 +25,7 @@ class ReservationTest < ActiveSupport::TestCase
     @reservation.event_id = nil
     assert @reservation.invalid?
 
-    @reservation.event_id = 1
+    @reservation.event_id = @event.id
     assert @reservation.valid?
   end
 
@@ -48,7 +50,7 @@ class ReservationTest < ActiveSupport::TestCase
     @reservation.event_id = 999999
     assert @reservation.invalid?
 
-    @reservation.event_id = 1
+    @reservation.event_id = @event.id
     assert @reservation.valid?
   end
 

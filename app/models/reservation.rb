@@ -20,5 +20,5 @@ class Reservation < ActiveRecord::Base
   #telは13文字以内
   validates :tel,length: { maximum: 13, message: "電話番号は13文字以内です"}
   #nameは30文字以内
-  validates :name,length: { maximum: 50,  message: "お名前は50文字以内です"}
+  validates :name,length: { maximum: 30,  message: "お名前は50文字以内です"}
 end
