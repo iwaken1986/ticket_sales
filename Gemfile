@@ -55,3 +55,5 @@ gem 'thin'
 
 gem 'material_design_lite-rails'
 
+gem 'seed_dump'
+
