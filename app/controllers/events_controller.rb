@@ -4,7 +4,12 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
+    if params[:category] == nil
     @events = Event.all
+    else
+    @events = Event.where(category: params[:category])
+    end
+
   end
 
   # GET /events/1
