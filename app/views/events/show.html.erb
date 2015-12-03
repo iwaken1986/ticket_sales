@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+<h2>イベント詳細</h2>
 <p>
   <strong>Date:</strong>
   <%= @event.date %>
@@ -20,13 +20,12 @@
   <%= @event.ticket_count %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', root_path %>
 
-<h2>予約状況</h2>
+
+
 
 <p>
-  チケットの残り枚数<%= @left %>枚(<%= @event.name %>)
+  ※ チケットの残り枚数<%= @left %>枚(<%= @event.name %>)
 </p>
 
 <p>
@@ -34,3 +33,5 @@
 
 <%= link_to('予約する', new_reservation_path(event_id: @event.id), class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
 </p>
+
+<%= link_to '戻る', root_path %>
