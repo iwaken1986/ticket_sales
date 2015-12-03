@@ -1,6 +1,6 @@
 <div class="mdl-grid">
 
-<h1 class="mdl-cell mdl-cell--12-col">予約内容</h1>
+<h1 class="mdl-cell mdl-cell--12-col">購入画面</h1>
 
 
 
@@ -13,12 +13,18 @@
   width: 512px;
 }
 .demo-card-wide > .mdl-card__title {
-  color: #fff;
+  color: #111111;
   height: 300px;
-  background-color: #0c00cc;
+  background-color: #CEF9DC;
   }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
+}
+</style>
+
+<style>
+.mdl-card__supporting-text {
+  color: #FF0000;
 }
 </style>
 
@@ -27,19 +33,9 @@
     <h2 class="mdl-card__title-text"><%= render 'form' %></h2>
   </div>
   <div class="mdl-card__supporting-text">
-    ※お名前はフルネームでお願いします。
-    ※電話番号の記入もお忘れなく。
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
+    ※ お名前はフルネームでお願いします。
+    <br>※ 電話番号の記入もお忘れなく。
+  </div>  
 </div>
 </div>
 <%= link_to '戻る', reservations_path %>
