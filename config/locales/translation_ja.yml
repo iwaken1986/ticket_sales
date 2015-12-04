@@ -11,6 +11,6 @@ ja:
         name: "イベント名"
 
       reservation:
-        event: :activerecord.models.event  #g
+        event_id: "イベント"
         name: "お名前"
         tel: "電話番号"  #g

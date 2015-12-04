@@ -24,15 +24,15 @@
       </div>
       <div class="mdl-card__actions mdl-card--border">
       <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col">
-        <%= button_to("Show", event, method: :get, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
+      <div class="mdl-cell mdl-cell--12-col">
+        <%= button_to(">イベント詳細を見る", event, method: :get, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
         </div>
-        <div class="mdl-cell mdl-cell--4-col">
-        <%= button_to('Destroy', event, method: :delete, data: { confirm: 'Are you sure?'}, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
-        </div>
-        <div class="mdl-cell mdl-cell--4-col">
-        <%= button_to('Edit', edit_event_path(event), method: :get, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
-        </div>
+        <!-- <div class="mdl-cell mdl-cell--4-col"> -->
+        <%#= button_to('Destroy', event, method: :delete, data: { confirm: 'Are you sure?'}, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
+        <!-- </div> -->
+        <!-- <div class="mdl-cell mdl-cell--4-col"> -->
+        <%#= button_to('Edit', edit_event_path(event), method: :get, class: "mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect") %>
+        <!-- </div> -->
         </div>
       </div>
     </div>
@@ -44,4 +44,4 @@
 
 
 
-<%= link_to 'New Event', new_event_path %>
+<%#= link_to 'New Event', new_event_path %>
