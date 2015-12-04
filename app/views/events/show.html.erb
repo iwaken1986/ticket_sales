@@ -58,12 +58,11 @@
       ※ チケットの残り枚数<%= @left %>枚(<%= @event.name %>)
     </p>
 
-    <p>
-      <!-- Raised button with ripple -->
-
-      <%= link_to('予約する', new_reservation_path(event_id: @event.id), class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %>
-    </p>
-
+<% if @left > 0 %>
+    <p><%= link_to('予約する', new_reservation_path(event_id: @event.id), class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect") %></p>
+<% else %>
+    <p>完売しました</p>
+<% end %>
     <%= link_to '戻る', root_path %>
     
   </div>
