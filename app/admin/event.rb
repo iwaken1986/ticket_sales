@@ -13,12 +13,6 @@ ActiveAdmin.register Event do
 #   permitted
 # end
 
-  index do
-    column :date
-    column :name
-    column :category
-    column :ticket_count
-  end
 
   form do |f|
     f.inputs do
