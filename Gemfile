@@ -57,3 +57,5 @@ gem 'material_design_lite-rails'
 
 gem 'seed_dump'
 
+gem 'activeadmin', github: 'activeadmin'
+gem 'devise'
