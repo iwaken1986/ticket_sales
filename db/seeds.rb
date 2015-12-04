@@ -7,14 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Event.delete_all
 Event.create!([
-  {id: 1, date: "2015-12-01 06:00:00", name: "ガンバ大阪杯", category: "音楽", ticket_count: 1},
-  {id: 2, date: "2015-12-10 08:30:00", name: "行列のできる音楽会", category: "クラシックイベント・アート", ticket_count: 5},
-  {id: 3, date: "2015-12-24 09:00:00", name: "韓流スタークリスマス握手会", category: "韓流", ticket_count: 2},
-  {id: 5, date: "2015-12-02 10:00:00", name: "KONOYO NO OWARI ライブ", category: "音楽", ticket_count: 3},
-  {id: 6, date: "2015-12-02 02:00:00", name: "猫と犬", category: "音楽", ticket_count: 8}
-])
-
-Event.create!([
   {id: 1, date: "2015-12-01 01:00:00", name: "ガンバ大阪杯", category: "スポーツ", ticket_count: 200},
   {id: 2, date: "2015-12-10 08:30:00", name: "行列のできる音楽会", category: "クラシックイベント・アート", ticket_count: 150},
   {id: 3, date: "2015-12-24 06:00:00", name: "韓流スタークリスマス握手会", category: "韓流", ticket_count: 50},
